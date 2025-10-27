@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import com.reliaquest.api.controller.IEmployeeController;
 import com.reliaquest.api.model.Employee;
 import com.reliaquest.api.model.EmployeeResponse;
 import com.reliaquest.api.service.EmployeeService;
@@ -73,7 +74,8 @@ public class EmployeeController implements IEmployeeController<EmployeeResponse,
             return ResponseEntity.badRequest().build();
         }
     }
-
+    
+    @Override
     @DeleteMapping("/employees/{id}")
     public ResponseEntity<String> deleteEmployeeById(@PathVariable String id) {
         String deletedName = employeeService.deleteEmployeeById(id);
