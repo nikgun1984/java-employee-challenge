@@ -2,8 +2,6 @@ package com.reliaquest.api.model;
 
 import java.util.List;
 
-import com.reliaquest.api.model.EmployeeResponse;
-
 public class EmployeeApiResponse {
     private List<EmployeeResponse> data;
     private String status;
