@@ -1,23 +1,15 @@
 package com.reliaquest.api.service;
 
 import com.reliaquest.api.model.Employee;
-import com.reliaquest.api.service.EmployeeService;
-import org.springframework.http.HttpMethod;
-
 import com.reliaquest.api.model.EmployeeResponse;
-import com.reliaquest.api.model.Employee;
 import com.reliaquest.api.model.EmployeeApiResponse;
 import com.reliaquest.api.model.CreateEmployeeResponse;
-
-import com.reliaquest.api.model.EmployeeApiResponse;
 import org.junit.jupiter.api.Test;
+import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
+
 import java.util.List;
 import java.util.Map;
-
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpEntity;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
