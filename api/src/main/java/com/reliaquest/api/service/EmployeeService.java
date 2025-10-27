@@ -32,7 +32,7 @@ public class EmployeeService {
     }
 
     public List<EmployeeResponse> getAllEmployees() {
-        logger.debug("Calling external mock API: {}", EMPLOYEE_API_URL);
+        logger.info("Calling external mock API: {}", EMPLOYEE_API_URL);
         EmployeeApiResponse response = restTemplate.getForObject(EMPLOYEE_API_URL, EmployeeApiResponse.class);
         if (response != null && response.getData() != null) {
             logger.info("Received {} employees", response.getData().size());
